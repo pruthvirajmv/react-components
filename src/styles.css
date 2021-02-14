@@ -1,0 +1,32 @@
+.SimpleCounter {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.CharacterCounter {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.MatchPassword {
+  font-family: sans-serif;
+  text-align: center;
+}
+table {
+  border-spacing: 12px;
+}
+
+.PasswordAlphanumeric {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.SubmitDisable {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.PasswordShow {
+  font-family: sans-serif;
+  text-align: center;
+}
