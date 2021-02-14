@@ -11,11 +11,11 @@ import PasswordShow from "./components/PasswordShow";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    {/* <SimpleCounter />
+    <SimpleCounter />
     <CharacterCount />
     <MatchPassword />
     <PasswordAlphanumeric />
-    <SubmitDisable /> */}
+    <SubmitDisable />
     <PasswordShow />
   </StrictMode>,
   rootElement
