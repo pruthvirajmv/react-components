@@ -44,7 +44,7 @@ function PasswordMatch() {
   );
 }
 
-export default function MatchPassword() {
+export function MatchPassword() {
   return (
     <div className="MatchPassword">
       <PasswordMatch />

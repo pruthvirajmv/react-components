@@ -28,7 +28,7 @@ function AlphanumericPassword() {
   );
 }
 
-export default function PasswordAlphanumeric() {
+export function PasswordAlphanumeric() {
   return (
     <div className="PasswordAlphanumeric">
       <AlphanumericPassword />

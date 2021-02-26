@@ -29,7 +29,7 @@ function CharacterCounter() {
   );
 }
 
-export default function CharacterCount() {
+export function CharacterCount() {
   return (
     <div className="CharacterCounter">
       <CharacterCounter />

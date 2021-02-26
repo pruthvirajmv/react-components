@@ -42,7 +42,7 @@ function DisableSubmit() {
   );
 }
 
-export default function SubmitDisable() {
+export function SubmitDisable() {
   return (
     <div className="SubmitDisable">
       <DisableSubmit />

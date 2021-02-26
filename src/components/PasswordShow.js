@@ -30,7 +30,7 @@ function ShowPassword() {
   );
 }
 
-export default function PasswordShow() {
+export function PasswordShow() {
   return (
     <div className="PasswordShow">
       <ShowPassword />

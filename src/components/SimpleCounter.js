@@ -29,7 +29,7 @@ function Counter() {
   );
 }
 
-export default function SimpleCounter() {
+export function SimpleCounter() {
   return (
     <div className="SimpleCounter">
       <Counter />
