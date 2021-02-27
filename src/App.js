@@ -18,6 +18,10 @@ import {
 export default function App() {
   return (
     <div className="App">
+      <header>
+        <h1>React Components</h1>
+      </header>
+      <hr></hr>
       <SimpleCounter />
       <br></br>
       <hr></hr>

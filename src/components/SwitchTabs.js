@@ -1,7 +1,7 @@
 import "../styles.css";
 import React, { useState } from "react";
 
-function Home() {
+const Home = () => {
   return (
     <>
       <h1>neog.camp</h1>
@@ -11,8 +11,8 @@ function Home() {
       </p>
     </>
   );
-}
-function About() {
+};
+const About = () => {
   return (
     <>
       <h1>i am new here </h1>
@@ -22,9 +22,9 @@ function About() {
       </p>
     </>
   );
-}
+};
 
-function Portfolio() {
+const Portfolio = () => {
   return (
     <>
       <h1>full stack roadmap</h1>
@@ -35,7 +35,7 @@ function Portfolio() {
       </p>
     </>
   );
-}
+};
 
 const compoList = [
   { name: "Home", compo: Home() },

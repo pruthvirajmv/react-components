@@ -1,46 +1,39 @@
 import "../styles.css";
 import React, { useState } from "react";
 
-function DisableSubmit() {
-  let flag = true;
+const DisableSubmit = () => {
   const [confirm, setConfirm] = useState("");
   const [reconfirm, setReconfirm] = useState("");
-  if (confirm === reconfirm) {
-    flag = false;
-    console.log(confirm);
-  }
 
   return (
     <>
       <h1>Disable Submit </h1>
-      <table style={{ margin: "auto" }}>
-        <tbody>
-          <tr>
-            <td>New Password:</td>
-            <td>
-              <input
-                type="password"
-                onChange={(e) => setConfirm(e.target.value)}
-              ></input>
-            </td>
-          </tr>
-
-          <tr>
-            <td>Re-enter Password:</td>
-            <td>
-              <input
-                type="password"
-                onChange={(e) => setReconfirm(e.target.value)}
-              ></input>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div>
+        <label>New Password: </label>
+        <input
+          value={confirm}
+          type="password"
+          onChange={(e) => setConfirm(e.target.value)}
+        ></input>
+      </div>
       <br></br>
-      <button disabled={flag}>submit</button>
+      <div>
+        <label>Re-enter Password: </label>
+        <input
+          value={reconfirm}
+          type="password"
+          onChange={(e) => setReconfirm(e.target.value)}
+        ></input>
+      </div>
+      <br></br>
+      <button
+        disabled={reconfirm.length > 0 && confirm === reconfirm ? false : true}
+      >
+        submit
+      </button>
     </>
   );
-}
+};
 
 export function SubmitDisable() {
   return (

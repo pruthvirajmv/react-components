@@ -13,16 +13,15 @@ table {
 }
 
 .cart {
-  border: 1px solid;
-  border-radius: 3px;
   width: 200px;
   margin: auto;
   text-align: left;
-  list-style-type: none;
 }
-
-.cart button {
+button {
   margin: 5px 10px;
+}
+ul {
+  list-style-type: none;
 }
 
 .DarkMode {
@@ -47,4 +46,11 @@ table {
   border-radius: 3px;
   margin-bottom: 10px;
   height: 30px;
+}
+
+.Todo ol {
+  font-size: 1.2rem;
+  margin: auto;
+  max-width: 150px;
+  text-align: left;
 }

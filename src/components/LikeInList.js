@@ -6,17 +6,17 @@ const itemList = [
   { name: "tanay", count: 3000 }
 ];
 
-function List() {
+const List = () => {
   const [componentList, setComponentList] = useState(itemList);
-  console.log(componentList);
+  //console.log(componentList);
 
-  const likeIncrement = (item) => {
+  const likeIncrement = (component) => {
     setComponentList(
-      componentList.map((ele) => {
-        if (ele.name === item.name) {
-          return { ...ele, count: ele.count + 1 };
+      componentList.map((item) => {
+        if (item.name === component.name) {
+          return { ...item, count: item.count + 1 };
         } else {
-          return ele;
+          return item;
         }
       })
     );
@@ -25,17 +25,25 @@ function List() {
   return (
     <>
       <ul>
-        {componentList.map((item, index) => (
+        {componentList.map((component, index) => (
           <li key={index}>
             {" "}
-            {item.name} <span>{item.count} </span>
-            <button onClick={() => likeIncrement(item)}> ♥ </button>{" "}
+            {component.name} <span>{component.count} </span>
+            <button
+              style={{
+                color: "red"
+              }}
+              onClick={() => likeIncrement(component)}
+            >
+              {" "}
+              ♥{" "}
+            </button>{" "}
           </li>
         ))}
       </ul>
     </>
   );
-}
+};
 
 export function LikeInList() {
   return (
