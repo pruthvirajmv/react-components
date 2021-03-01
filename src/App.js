@@ -14,6 +14,7 @@ import {
   DarkMode,
   LikeInList
 } from "./components";
+import { GreyOut } from "./components/Greyout";
 
 export default function App() {
   return (
@@ -59,6 +60,9 @@ export default function App() {
       <br></br>
       <hr></hr>
       <LikeInList />
+      <br></br>
+      <hr></hr>
+      <GreyOut />
       <br></br>
       <hr></hr>
     </div>
